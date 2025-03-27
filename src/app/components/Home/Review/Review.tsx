@@ -26,7 +26,7 @@ const reviewData = [
     {
       name: "Nick Aidil",
       review:
-        "This site has transformed my anime-watching experience! The HD quality and the vast collection of titles are unmatched. It's like a dream come true for anime fans!",
+        "Yuki Suou very helpfully to manage my server!",
         title: "Developer",
         image: "/images/p1.png", 
     },
