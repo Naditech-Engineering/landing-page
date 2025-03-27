@@ -21,8 +21,8 @@ const font = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Anime Landing | Next Js 15",
-  description: "Anime Landing Page using Next Js 15",
+  title: "Yuki Suou | ID Discord Bot",
+  description: "Lets Make Discord Server More Interesting and Attractive with Yuki Suou ID",
 };
 
 export default function RootLayout({
