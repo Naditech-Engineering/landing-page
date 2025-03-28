@@ -17,6 +17,7 @@ const WhyChoose = () => {
           title="Image Generation"
           description="From imagination to reality powered by Kh1ev Engine"
           linkText="Learn more"
+          link="https://discord.gg/kh1ev"
         />
         </div>
         <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="100">
