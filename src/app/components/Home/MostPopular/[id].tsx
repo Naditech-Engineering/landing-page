@@ -8,7 +8,7 @@ const PopularDetail = () => {
   const { id } = router.query; // Get the ID from the URL
 
   // Sample data for demonstration
-  const communityData = {
+  const communityData: { [key: number]: { title: string; description: string; image: string } } = {
     0: {
       title: "KH1EV Community",
       description: "Official Yuki Suou Discord Bot.",
@@ -22,7 +22,11 @@ const PopularDetail = () => {
     // Add more community data as needed
   };
 
-  const community = communityData[id as keyof typeof communityData];
+  // Convert id to a number if it's defined
+  const communityId = Array.isArray(id) ? parseInt(id[0]) : id ? parseInt(id) : undefined;
+
+  // Ensure communityId is a valid number before accessing communityData
+  const community = communityId !== undefined && communityId in communityData ? communityData[communityId] : null;
 
   if (!community) {
     return <div>Loading...</div>; // Handle loading state or not found
