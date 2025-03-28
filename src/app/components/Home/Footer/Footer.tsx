@@ -7,11 +7,8 @@ function Footer() {
     {
       title: "ABOUT US",
       links: [
-        "Support Center",
-        "Customer Center",
-        "About Us",
-        "Copyright",
-        "Careers",
+        "Server",
+        "Kh1ev",
       ],
     },
     {
