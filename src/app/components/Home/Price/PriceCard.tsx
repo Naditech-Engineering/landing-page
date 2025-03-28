@@ -1,10 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FaCheck } from "react-icons/fa6";
 
-type priceProps = {
-  price: number;
-  plan: string;
-};
+type priceProps = { price: number; plan: string; };
 
 function PriceCard({ price, plan }: priceProps) {
   const priceFeatures = [
@@ -17,25 +14,18 @@ function PriceCard({ price, plan }: priceProps) {
   ];
 
   const handleBuyClick = () => {
-    // Use type assertion to access sbBoW
-    const sbBoW = (window as any).sbBoW;
-    if (sbBoW) {
-      sbBoW.draw("yukisuou", "QlVZ", "position-top-middle", "#ff8600", "#FFFFFF");
-    } else {
-      console.error("sbBoW is not defined");
-    }
-  };
-
-  useEffect(() => {
+    // Load the script dynamically
     const script = document.createElement("script");
     script.src = "https://storage.sociabuzz.com/storage/js/main/buttononwebsite/index.min.js";
     script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
+    script.onload = () => {
+      // Call the function to display the purchase interface
+      if (window.sbBoW) {
+        window.sbBoW.draw("yukisuou", "QlVZ", "position-top-middle", "#ff8600", "#FFFFFF");
+      }
     };
-  }, []);
+    document.body.appendChild(script);
+  };
 
   return (
     <div className="bg-white p-10 rounded-lg shadow-lg">
@@ -48,10 +38,7 @@ function PriceCard({ price, plan }: priceProps) {
       <p className="mt-2 text-gray-600 text-center">Per server</p>
       <div className="mt-10">
         {priceFeatures.map((item, index) => (
-          <div
-            key={index}
-            className="text-center mb-4 flex items-center space-x-3"
-          >
+          <div key={index} className="text-center mb-4 flex items-center space-x-3">
             <div className="text-center w-8 h-8 bg-gray-300 rounded-full justify-center flex items-center flex-col">
               <FaCheck className="text-green-500" />
             </div>
@@ -62,8 +49,8 @@ function PriceCard({ price, plan }: priceProps) {
         ))}
       </div>
       <div className="mt-8">
-        <button 
-          onClick={handleBuyClick} 
+        <button
+          onClick={handleBuyClick}
           className="block w-full p-3 text-base md:text-lg text-white font-bold bg-gradient-to-r from-[#F86401] via-[#E93306] via-[#F86401] to-[#FFA500] hover:from-[#FF5733] hover:via-[#FFA500] hover:to-[#FFD700] transition-all duration-300"
         >
           BUY
