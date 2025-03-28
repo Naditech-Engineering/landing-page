@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useEffect } from "react";
 import Hero from "./Hero/Hero";
 import WhyChoose from "./WhyChoose/WhyChoose";
@@ -10,11 +10,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Home = () => {
-
   useEffect(() => {
     const initAOS = async () => {
       await import('aos');
-       AOS.init({
+      AOS.init({
         duration: 1000,
         once: true,
         easing: 'ease',
@@ -22,16 +21,30 @@ const Home = () => {
       });
     };
     initAOS();
-  },[])
+  }, []);
 
   return (
     <div className="overflow-hidden bg-[url('/images/Frame.png')] bg-contain bg-center bg-repeat">
-      <Hero />
-      <WhyChoose />
-      <AnalyticFeatures />
-      <MostPopular />
-      <Review />
-      <Price />
+      <div>
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="whychoose">
+          <WhyChoose />
+        </section>
+        <section id="about">
+          <AnalyticFeatures />
+        </section>
+        <section id="mostpopular">
+          <MostPopular />
+        </section>
+        <section id="review">
+          <Review />
+        </section>
+        <section id="price">
+          <Price />
+        </section>
+      </div>
     </div>
   );
 };
