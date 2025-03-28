@@ -1,8 +1,8 @@
 export const navLinks = [
     {
         id: 1,
-        url: '#hero',
-        label: 'Hero'
+        url: '#home',
+        label: 'Home'
     },
     {
         id: 2,
