@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FaCheck } from "react-icons/fa6";
 
 type priceProps = {
@@ -15,21 +15,6 @@ function PriceCard({ price, plan }: priceProps) {
     { feature: "Multi-Language AI" },
     { feature: "Exclusive Discounts" },
   ];
-
-  useEffect(() => {
-    const script1 = document.createElement("script");
-    script1.type = "text/javascript";
-    script1.src = "https://storage.sociabuzz.com/storage/js/main/buttononwebsite/index.min.js";
-    document.body.appendChild(script1);
-  }, []);
-
-  const handleBuyClick = () => {
-    // Memanggil fungsi Sociabuzz langsung
-    const sbBoW = (window as any).sbBoW;
-    if (sbBoW) {
-      sbBoW.draw("yukisuou", "QlVZ", "position-top-middle", "#ff8600", "#FFFFFF");
-    }
-  };
 
   return (
     <div className="bg-white p-10 rounded-lg shadow-lg">
@@ -56,12 +41,15 @@ function PriceCard({ price, plan }: priceProps) {
         ))}
       </div>
       <div className="mt-8">
-        <button
-          className="block w-full p-3 text-base md:text-lg text-white font-bold bg-gradient-to-r from-[#F86401] via-[#E93306] to-[#FFA500] hover:from-[#FF5733] hover:via-[#FFA500] hover:to-[#FFD700] transition-all duration-300"
-          onClick={handleBuyClick}
+        <a 
+          href="https://sociabuzz.com/yukisuou/tribe" 
+          target="_blank" 
+          rel="noopener noreferrer"
         >
-          BUY
-        </button>
+          <button className="block w-full p-3 text-base md:text-lg text-white font-bold bg-gradient-to-r from-[#F86401] via-[#E93306] via-[#F86401] to-[#FFA500] hover:from-[#FF5733] hover:via-[#FFA500] hover:to-[#FFD700] transition-all duration-300">
+            BUY
+          </button>
+        </a>
       </div>
     </div>
   );
