@@ -1,4 +1,3 @@
-"use client";
 import { navLinks } from "@/app/constant/Constant";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -27,6 +26,10 @@ const Nav = ({ openNav }: Props) => {
     }
   };
 
+  const handleLoginClick = () => {
+    window.location.href = "https://dash.yukisuou.xyz/dashboard";
+  };
+
   return (
     <div className={`fixed ${navBg ? 'bg-white/80 shadow-md' : 'bg-transparent'} w-full transition-all duration-200 h-[12vh] z-[1000]`}>
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
@@ -47,7 +50,10 @@ const Nav = ({ openNav }: Props) => {
         </div>
         {/* Button */}
         <div className="flex items-center space-x-4">
-          <button className="md:px-8 md:py-2.5 px-6 py-2 text-white font-semibold text-base bg-gradient-to-r from-[#F86401] via-[#E93306] to-[#FFA500] hover:from-[#FF5733] hover:to-[#FFD700] transition-all duration-200 rounded-full">
+          <button 
+            onClick={handleLoginClick} 
+            className="md:px-8 md:py-2.5 px-6 py-2 text-white font-semibold text-base bg-gradient-to-r from-[#F86401] via-[#E93306] to-[#FFA500] hover:from-[#FF5733] hover:to-[#FFD700] transition-all duration-200 rounded-full"
+          >
             Login
           </button>
           <HiBars3BottomRight onClick={openNav} className="w-8 h-8 cursor-pointer text-black lg:hidden" />
