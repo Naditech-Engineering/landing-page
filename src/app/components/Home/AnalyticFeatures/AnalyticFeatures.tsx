@@ -3,7 +3,7 @@ import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import Link from "next/link"; // Import Link from Next.js
 
-const AnalyticFeatures = () => {
+function AnalyticFeatures() {
   return (
     <div className="pt-24 pb-16">
       {/* define grid */}
@@ -56,6 +56,6 @@ const AnalyticFeatures = () => {
       </div>
     </div>
   );
-};
+}
 
 export default AnalyticFeatures;
