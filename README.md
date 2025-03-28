@@ -1,6 +1,6 @@
 # Yuki Suou Discord Bot Website
 
-This is a sleek and responsive Anime Streaming Website built with **Next.js** (15.1.2) and **Tailwind CSS** for modern styling. The website features smooth animations powered by **AOS (Animate On Scroll)** and is fully deployed on **Vercel** for fast and reliable hosting.
+This is a sleek and responsive Yuki Suou Anime Discord Bot Website built with **Next.js** (15.1.2) and **Tailwind CSS** for modern styling. The website features smooth animations powered by **AOS (Animate On Scroll)** and is fully deployed on **Vercel** for fast and reliable hosting.
 
 ## Features
 - **Modern UI/UX Design**: Designed using **Figma**, focusing on a clean and user-friendly interface.
