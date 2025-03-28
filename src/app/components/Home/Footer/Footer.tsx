@@ -79,7 +79,7 @@ function Footer() {
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-2"/>
-                contact@kh1ev.my.id
+                contact@yukisuou.xyz
               </li>
             </ul>
           </div>
