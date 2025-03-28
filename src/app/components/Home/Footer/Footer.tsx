@@ -17,11 +17,9 @@ function Footer() {
     {
       title: "Our Information",
       links: [
-        "Return Policy",
         "Privacy Policy",
-        "Terms & Conditions",
+        "Terms of Service",
         "Community Guidelines",
-        "Content Policies",
       ],
     },
   ];
