@@ -7,16 +7,16 @@ function Footer() {
     {
       title: "ABOUT US",
       links: [
-        "Discord Server",
-        "Kh1ev Community",
+        { name: "Discord Server", url: "https://discord.gg/MwNE7Vfb6t" },
+        { name: "Kh1ev Community", url: "https://kh1ev.my.id/" },
       ],
     },
     {
       title: "LEGAL",
       links: [
-        "Privacy Policy",
-        "Terms of Service",
-        "Community Guidelines",
+        { name: "Privacy Policy", url: "https://discord.com/privacy/" },
+        { name: "Terms of Service", url: "https://discord.com/terms/" },
+        { name: "Community Guidelines", url: "https://discord.com/guidelines/" },
       ],
     },
   ];
@@ -47,7 +47,16 @@ function Footer() {
               </h3>
               <ul className="mt-4 space-y-4 text-sm font-semibold text-gray-500">
                 {section.links.map((link, linkIndex) => (
-                  <li key={linkIndex}>{link}</li>
+                  <li key={linkIndex}>
+                    <a 
+                      href={link.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-gray-500 hover:text-gray-800"
+                    >
+                      {link.name}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -76,7 +85,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="mt-5 borrder-t pt-8 flex flex-col md:flex-row justify-center items-center text-black text-sm">
+        <div className="mt-5 border-t pt-8 flex flex-col md:flex-row justify-center items-center text-black text-sm">
           <p className="text-center font-medium">Copyright © 2025 Kh1ev Community</p>
         </div>
       </div>
