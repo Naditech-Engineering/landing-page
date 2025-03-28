@@ -26,12 +26,26 @@ const Home = () => {
 
   return (
     <div className="overflow-hidden bg-[url('/images/Frame.png')] bg-contain bg-center bg-repeat">
+      <div>
+      <section id="hero"></section>
       <Hero />
+      </section>
+      <section id="whychoose">
       <WhyChoose />
-      <AnalyticFeatures />
+      </section>
+      <section id="about">
+      <About />
+      </section>
+      <section id="mostpopular">
       <MostPopular />
+      </section>
+      <section id="review">
       <Review />
+      </section>
+      <section id="price"></section>
       <Price />
+      </section>
+    </div>
     </div>
   );
 };
