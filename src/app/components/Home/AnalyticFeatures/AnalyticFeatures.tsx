@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import Link from "next/link"; // Import Link from Next.js
 
 const AnalyticFeatures = () => {
   return (
@@ -20,16 +21,16 @@ const AnalyticFeatures = () => {
         {/* text */}
         <div>
           <h1 className="text-base font-semibold text-[#FF5733]">
-          Meta AI Contribution Indonesia
+            Meta AI Contribution Indonesia
           </h1>
           <h1 className="mt-4 text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
-           Lets Make Discord Server More Interesting and Attractive with
-           YUKI<span className='text-[#F86401]'>SUOU</span>
+            Let's Make Discord Server More Interesting and Attractive with
+            YUKI<span className='text-[#F86401]'>SUOU</span>
           </h1>
           <p className="mt-4 text-gray-600 text-sm font-medium leading-[1.6rem]">
             We prioritize understanding our users and constantly improving
             Yuki Suou through advanced features and user feedback. By staying
-            staying attuned to your needs, we ensure a seamless and enjoyable
+            attuned to your needs, we ensure a seamless and enjoyable
             bot experience. Here's how we deliver value:
           </p>
           <ul className="mt-7 space-y-2 text-gray-800">
@@ -46,9 +47,11 @@ const AnalyticFeatures = () => {
               Roleplay Minigame
             </li>
           </ul>
-          <button className="mt-8 px-8 py-3 bg-gray-100 text-gray-800 font-semibold rounded-full hover:bg-[#F86401] transition-all duration-200 hover:text-white">
-            Invite &rarr;
-          </button>
+          <Link href="https://dash.yukisuou.xyz/invite" target="_blank" rel="noopener noreferrer">
+            <button className="mt-8 px-8 py-3 bg-gray-100 text-gray-800 font-semibold rounded-full hover:bg-[#F86401] transition-all duration-200 hover:text-white">
+              Invite &rarr;
+            </button>
+          </Link>
         </div>
       </div>
     </div>
