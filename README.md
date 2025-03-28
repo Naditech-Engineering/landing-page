@@ -16,5 +16,4 @@ This is a sleek and responsive Yuki Suou Anime Discord Bot Website built with **
 - **Vercel** for Deployment
 
 <img width="1498" alt="Group 21" src="https://media.discordapp.net/attachments/1326522479686057995/1355037929726279881/yukiwebsite_1.png?ex=67e778e9&is=67e62769&hm=0f2eb19f7652442354ea4567cdea2c4268fa4345df2b63b0b61fb68656aaca14&=&format=webp&quality=lossless&width=1188&height=569" />
-
 <img width="1498" alt="Group 21" src="https://media.discordapp.net/attachments/1326522479686057995/1355037930065756240/yukiwebsite_2.png?ex=67e778e9&is=67e62769&hm=ce5e7d2ba3c9f4029bf6f5b99c76a41a1d6f4c32f23ca2fa66471846f5eac943&=&format=webp&quality=lossless&width=1192&height=569" />
