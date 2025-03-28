@@ -20,6 +20,13 @@ const Nav = ({ openNav }: Props) => {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className={`fixed ${navBg ? 'bg-white/80 shadow-md' : 'bg-transparent'} w-full transition-all duration-200 h-[12vh] z-[1000]`}>
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
@@ -33,9 +40,9 @@ const Nav = ({ openNav }: Props) => {
         {/* nav links */}
         <div className="hidden lg:flex items-center space-x-10">
           {navLinks.map((link) => (
-            <Link href={link.url} key={link.id}>
+            <button key={link.id} onClick={() => scrollToSection(link.url.substring(1))}>
               <p className="nav_links">{link.label}</p>
-            </Link>
+            </button>
           ))}
         </div>
         {/* Button */}
@@ -44,3 +51,10 @@ const Nav = ({ openNav }: Props) => {
             Login
           </button>
           <HiBars3BottomRight onClick={openNav} className="w-8 h-8 cursor-pointer text-black lg:hidden" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Nav;
