@@ -56,9 +56,10 @@ function PriceCard({ price, plan }: priceProps) {
           id="sociabuzz-button"
           className="block w-full p-3 text-base md:text-lg text-white font-bold bg-gradient-to-r from-[#F86401] via-[#E93306] to-[#FFA500] hover:from-[#FF5733] hover:via-[#FFA500] hover:to-[#FFD700] transition-all duration-300"
           onClick={() => {
-            // Trigger the Sociabuzz button functionality
-            if (window.sbBoW) {
-              window.sbBoW.draw("yukisuou", "QlVZ", "position-top-middle", "#ff8600", "#FFFFFF");
+            // Casting window to include sbBoW
+            const sbBoW = (window as any).sbBoW;
+            if (sbBoW) {
+              sbBoW.draw("yukisuou", "QlVZ", "position-top-middle", "#ff8600", "#FFFFFF");
             }
           }}
         >
