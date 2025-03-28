@@ -5,11 +5,12 @@ import React, { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
 type Props = {
-  openNav:()=>void
-}
+  openNav: () => void;
+};
 
-const Nav = ({openNav}: Props) => {
+const Nav = ({ openNav }: Props) => {
   const [navBg, setNavBg] = useState(false);
+
   useEffect(() => {
     const handler = () => {
       if (window.scrollY >= 90) setNavBg(true);
@@ -20,7 +21,7 @@ const Nav = ({openNav}: Props) => {
   }, []);
 
   return (
-    <div className={`fixed ${navBg ? 'bg-white/80 shadow-md': 'fixed'} w-full transition-all duration-200 h-[12vh] z-[1000]`}>
+    <div className={`fixed ${navBg ? 'bg-white/80 shadow-md' : 'bg-transparent'} w-full transition-all duration-200 h-[12vh] z-[1000]`}>
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* logo */}
         <h1 className="text-xl md:text-2xl font-extrabold">
@@ -39,14 +40,7 @@ const Nav = ({openNav}: Props) => {
         </div>
         {/* Button */}
         <div className="flex items-center space-x-4">
-          <button className="md:px-8 md:py-2.5 px-6 py-2 text-white font-semibold text-base bg-gradient-to-r from-[#F86401] via-[#E93306] via-[#F86401] to-[#FFA500] hover:from-[#FF5733] hover:via-[#FFA500] hover:to-[#FFD700] transition-all duration-200 rounded-full">
+          <button className="md:px-8 md:py-2.5 px-6 py-2 text-white font-semibold text-base bg-gradient-to-r from-[#F86401] via-[#E93306] to-[#FFA500] hover:from-[#FF5733] hover:to-[#FFD700] transition-all duration-200 rounded-full">
             Login
           </button>
           <HiBars3BottomRight onClick={openNav} className="w-8 h-8 cursor-pointer text-black lg:hidden" />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Nav;
