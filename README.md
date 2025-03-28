@@ -15,10 +15,4 @@ This is a sleek and responsive Anime Streaming Website built with **Next.js** (1
 - **AOS (Animate On Scroll)**
 - **Vercel** for Deployment
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   https://github.com/Buddini96/Anime_Landing_Page.git
-
 <img width="1498" alt="Group 21" src="https://media.discordapp.net/attachments/1326522479686057995/1355037929726279881/yukiwebsite_1.png?ex=67e778e9&is=67e62769&hm=0f2eb19f7652442354ea4567cdea2c4268fa4345df2b63b0b61fb68656aaca14&=&format=webp&quality=lossless&width=1188&height=569" />
