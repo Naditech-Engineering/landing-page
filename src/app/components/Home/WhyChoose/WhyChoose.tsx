@@ -2,7 +2,7 @@
 import React from "react";
 import WhyChooseCard from "./WhyChooseCard";
 
-const WhyChoose = () => {
+const WhyChoose = () {
 
   return (
     <div className="pt-16 pb-16">

@@ -9,7 +9,7 @@ type Props = {
   linkText: string;
 };
 
-const WhyChooseCard = ({ image, title, description, linkText }: Props) => {
+const WhyChooseCard = ({ image, title, description, linkText }: Props) {
   return (
     <div className="bg-white p-8 rounded-lg shadow-xl"
     // style={{
