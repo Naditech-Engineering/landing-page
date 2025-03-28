@@ -5,7 +5,7 @@ import { FaClock, FaEnvelope } from "react-icons/fa6";
 function Footer() {
   const footerData = [
     {
-      title: "About Us",
+      title: "ABOUT US",
       links: [
         "Support Center",
         "Customer Center",
@@ -15,7 +15,7 @@ function Footer() {
       ],
     },
     {
-      title: "Our Information",
+      title: "LEGAL",
       links: [
         "Privacy Policy",
         "Terms of Service",
@@ -57,7 +57,7 @@ function Footer() {
           ))}
 
           <div>
-            <h3 className="text-lg font-semibold text-gray-800">Contact Info</h3>
+            <h3 className="text-lg font-semibold text-gray-800">INFORMATION</h3>
             <ul className="mt-4 space-y-4 text-sm font-semibold text-gray-500">
               <li className="flex items-center">
                 <FaMapMarkedAlt className="mr-2"/>
