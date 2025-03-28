@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCheck } from "react-icons/fa6";
 
 type priceProps = {
@@ -17,11 +17,25 @@ function PriceCard({ price, plan }: priceProps) {
   ];
 
   const handleBuyClick = () => {
-    // Call the Sociabuzz function
-    if (window.sbBoW) {
-      window.sbBoW.draw("yukisuou", "QlVZ", "position-top-middle", "#ff8600", "#FFFFFF");
+    // Use type assertion to access sbBoW
+    const sbBoW = (window as any).sbBoW;
+    if (sbBoW) {
+      sbBoW.draw("yukisuou", "QlVZ", "position-top-middle", "#ff8600", "#FFFFFF");
+    } else {
+      console.error("sbBoW is not defined");
     }
   };
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://storage.sociabuzz.com/storage/js/main/buttononwebsite/index.min.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="bg-white p-10 rounded-lg shadow-lg">
