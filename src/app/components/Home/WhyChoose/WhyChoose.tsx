@@ -31,7 +31,7 @@ const WhyChoose = () => {
         <WhyChooseCard 
           image="/images/bookmark.png"
           title="Community"
-          description="Manage community provides Partnership features"
+          description="Manage Community with Partnership Feature"
           linkText="Learn"
         />
         </div>
