@@ -9,13 +9,9 @@ type Props = {
   linkText: string;
 };
 
-const WhyChooseCard = ({ image, title, description, linkText }: Props) {
+const WhyChooseCard = function({ image, title, description, linkText }: Props) {
   return (
-    <div className="bg-white p-8 rounded-lg shadow-xl"
-    // style={{
-    //     boxShadow: "1px 3px 5px #FFFFFF, 4px 4px 2px rgba(13, 29, 10, 0.1)",
-    //   }}
-      >
+    <div className="bg-white p-8 rounded-lg shadow-xl">
       <Image
         src={image}
         alt={title}
@@ -23,7 +19,7 @@ const WhyChooseCard = ({ image, title, description, linkText }: Props) {
         height={50}
         className="object-contain mx-auto"
       />
-      <h1 className="text-center lext-lg mt-5 mb-5 font-semibold text-gray-800">
+      <h1 className="text-center text-lg mt-5 mb-5 font-semibold text-gray-800">
         {title}
       </h1>
       <p className="text-gray-600 text-center font-medium text-sm mb-7">
@@ -31,7 +27,7 @@ const WhyChooseCard = ({ image, title, description, linkText }: Props) {
       </p>
       <p className="text-center font-semibold cursor-pointer flex items-center justify-center hover:text-[#E93306] transition-all duration-200">
         {linkText}
-        <FaArrowRightLong className="w-4 h-4 ml-1hover:text-[#E93306] transition-all duration-200" />
+        <FaArrowRightLong className="w-4 h-4 ml-1 hover:text-[#E93306] transition-all duration-200" />
       </p>
     </div>
   );
