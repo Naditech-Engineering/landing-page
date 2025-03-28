@@ -28,7 +28,7 @@ const Home = () => {
     <div className="overflow-hidden bg-[url('/images/Frame.png')] bg-contain bg-center bg-repeat">
     <div>
        <section id="hero">
-         <Hero />
+         <Home />
       <WhyChoose />
        </section>
          <section id="whychoose">
