@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Hero from "./Hero/Hero";
 import WhyChoose from "./WhyChoose/WhyChoose";
-import AnalyticFeatures from "./AnalyticFeatures/AnalyticFeatures";
+import About from "./About/About";
 import MostPopular from "./MostPopular/MostPopular";
 import Review from "./Review/Review";
 import Price from "./Price/Price";
