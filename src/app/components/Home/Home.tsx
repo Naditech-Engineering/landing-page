@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Hero from "./Hero/Hero";
 import WhyChoose from "./WhyChoose/WhyChoose";
-import About from "./About/About";
+import AnalyticFeatures from "./AnalyticFeatures/AnalyticFeatures";
 import MostPopular from "./MostPopular/MostPopular";
 import Review from "./Review/Review";
 import Price from "./Price/Price";
@@ -27,25 +27,19 @@ const Home = () => {
   return (
     <div className="overflow-hidden bg-[url('/images/Frame.png')] bg-contain bg-center bg-repeat">
     <div>
-      <section id="hero">
-        <Hero />
+       <section id="hero">
+         <Hero />
+      <WhyChoose />
+       </section>
+         <section id="whychoose">
+      <AnalyticFeatures />
       </section>
-      <section id="whychoose">
-        <WhyChoose />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="mostpopular">
-        <MostPopular />
-      </section>
-      <section id="review">
-        <Review />
-      </section>
-      <section id="price">
-        <Price />
-      </section>
-    </div>
+           <section id="analyticfeatures">
+      <MostPopular />
+       </section>
+         <section id="mostpopular">
+      <Review />
+      <Price />
     </div>
   );
 };
