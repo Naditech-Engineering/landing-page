@@ -16,6 +16,13 @@ function PriceCard({ price, plan }: priceProps) {
     { feature: "Exclusive Discounts" },
   ];
 
+  const handleBuyClick = () => {
+    // Call the Sociabuzz function
+    if (window.sbBoW) {
+      window.sbBoW.draw("yukisuou", "QlVZ", "position-top-middle", "#ff8600", "#FFFFFF");
+    }
+  };
+
   return (
     <div className="bg-white p-10 rounded-lg shadow-lg">
       <p className="mt-3 text-xl font-semibold text-[#E93306] text-center">
@@ -41,7 +48,12 @@ function PriceCard({ price, plan }: priceProps) {
         ))}
       </div>
       <div className="mt-8">
-        <button className="block w-full p-3 text-base md:text-lg text-white font-bold bg-gradient-to-r from-[#F86401] via-[#E93306] via-[#F86401] to-[#FFA500] hover:from-[#FF5733] hover:via-[#FFA500] hover:to-[#FFD700] transition-all duration-300 ">BUY</button>
+        <button 
+          onClick={handleBuyClick} 
+          className="block w-full p-3 text-base md:text-lg text-white font-bold bg-gradient-to-r from-[#F86401] via-[#E93306] via-[#F86401] to-[#FFA500] hover:from-[#FF5733] hover:via-[#FFA500] hover:to-[#FFD700] transition-all duration-300"
+        >
+          BUY
+        </button>
       </div>
     </div>
   );
