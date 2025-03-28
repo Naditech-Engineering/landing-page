@@ -1,13 +1,13 @@
 export const navLinks = [
     {
         id: 1,
-        url: '#hero',
+        url: '#home',
         label: 'Home'
     },
     {
         id: 2,
-        url: '#whychoose',
-        label: 'Why Choose Us'
+        url: '#feature',
+        label: 'Feature'
     },
     {
         id: 3,
@@ -16,17 +16,17 @@ export const navLinks = [
     },
     {
         id: 4,
-        url: '#mostpopular',
-        label: 'Most Popular'
+        url: '#selection',
+        label: 'Selection'
     },
     {
         id: 5,
         url: '#review',
-        label: 'Reviews'
+        label: 'Review'
     },
     {
         id: 6,
-        url: '#price',
-        label: 'Pricing'
+        url: '#premium',
+        label: 'Premium'
     }
 ];
