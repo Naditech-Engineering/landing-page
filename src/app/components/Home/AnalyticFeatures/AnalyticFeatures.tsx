@@ -49,7 +49,7 @@ function AnalyticFeatures() {
           </ul>
           <Link href="https://dash.yukisuou.xyz/invite" target="_blank" rel="noopener noreferrer">
             <button className="mt-8 px-8 py-3 bg-gray-100 text-gray-800 font-semibold rounded-full hover:bg-[#F86401] transition-all duration-200 hover:text-white">
-              Invite &rarr;
+              Invite
             </button>
           </Link>
         </div>
