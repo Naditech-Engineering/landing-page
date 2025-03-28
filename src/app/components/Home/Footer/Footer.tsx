@@ -7,7 +7,7 @@ function Footer() {
     {
       title: "ABOUT US",
       links: [
-        "DiscordServer",
+        "Discord Server",
         "Kh1ev Community",
       ],
     },
