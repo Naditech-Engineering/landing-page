@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Head from "next/head";
 
 const KH1EVCommunity = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
       <Head>
@@ -13,7 +19,7 @@ const KH1EVCommunity = () => {
         />
       </Head>
       <div className="bg-gray-100 flex items-center justify-center min-h-screen">
-        <div className="text-center p-6 bg-gray-100">
+        <div className="text-center p-6 bg-gray-100" data-aos="fade-up">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">About Our Server</h1>
           <p className="text-gray-600">
             We are an active community where you can find fun, learning, and a great time. From gaming to tech
