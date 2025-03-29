@@ -8,12 +8,12 @@ type priceProps = {
 
 function PriceCard({ price, plan }: priceProps) {
   const priceFeatures = [
-    { feature: "Wattpad Story" },
+    { feature: "Partnership" },
     { feature: "Management Improvement" },
     { feature: "Anime Roleplay" },
-    { feature: "Temp Email" },
+    { feature: "Booster Custom Role" },
     { feature: "Multi-Language AI" },
-    { feature: "Exclusive Discounts" },
+    { feature: "Fast AI Interface" },
   ];
 
   return (
