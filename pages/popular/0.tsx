@@ -18,14 +18,14 @@ const KH1EVCommunity: React.FC = () => {
           `}
         </style>
       </Head>
-      <body className="bg-gray-100 flex items-center justify-center min-h-screen">
+      <div className="bg-gray-100 flex items-center justify-center min-h-screen">
         <div className="text-center p-6 bg-gray-100">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">About Our Server</h1>
           <p className="text-gray-600">
             We are an active community where you can find fun, learning, and a great time. From gaming to tech discussions, we offer a diverse range of channels that cater to all interests.
           </p>
         </div>
-      </body>
+      </div>
     </>
   );
 };
