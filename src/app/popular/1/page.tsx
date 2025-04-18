@@ -21,12 +21,12 @@ const ComingSoonPage = () => {
         className="text-4xl md:text-5xl font-extrabold mt-10 bg-gradient-to-r from-indigo-600 via-[#b3917b] to-[#dbcbbf] text-transparent bg-clip-text"
         data-aos="fade-up"
       >
-        Coming Soon
+        COMING SOON
       </h1>
 
       {/* Description */}
       <p
-        className="mt-10 text-[#5e5247] max-w-md text-sm md:text-base"
+        className="mt-6 text-[#5e5247] max-w-md text-sm md:text-base"
         data-aos="fade-up"
         data-aos-delay="100"
       >
