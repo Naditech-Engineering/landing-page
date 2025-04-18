@@ -3,89 +3,47 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const DocumentationPage = () => {
+const ComingSoonPage = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <div className="pt-24 pb-16 px-6 md:px-16">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-white text-center px-4 pt-24 pb-16">
+      {/* Glowing Circle Animation */}
+      <div
+        className="w-48 h-48 rounded-full bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 animate-pulse shadow-2xl blur-sm"
+        data-aos="zoom-in"
+      ></div>
+
+      {/* Coming Soon Text */}
       <h1
-        className="text-3xl md:text-4xl font-bold text-center mb-12"
+        className="text-4xl md:text-5xl font-extrabold mt-8 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 text-transparent bg-clip-text"
         data-aos="fade-up"
       >
-        📚 Yuki Suou Bot Documentation
+        Coming Soon
       </h1>
 
-      <div className="max-w-4xl mx-auto space-y-10 text-gray-800">
-        <section data-aos="fade-up">
-          <h2 className="text-xl font-semibold mb-2">📌 What is Yuki Suou?</h2>
-          <p className="text-sm leading-7">
-            Yuki Suou is a multipurpose Discord bot with a warm personality. She's designed to help manage your community, provide entertainment, and integrate AI features seamlessly.
-          </p>
-        </section>
+      <p
+        className="mt-4 text-gray-600 max-w-md text-sm md:text-base"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        This feature is under development. We’re preparing something awesome for you!
+      </p>
 
-        <section data-aos="fade-up">
-          <h2 className="text-xl font-semibold mb-2">🛠️ Features</h2>
-          <ul className="list-disc pl-5 text-sm leading-7">
-            <li>AI Chat with character personality</li>
-            <li>Auto Moderation & Anti-Spam</li>
-            <li>Leveling System</li>
-            <li>Image Generation & Face Swapper</li>
-            <li>Custom Commands & Role Management</li>
-          </ul>
-        </section>
-
-        <section data-aos="fade-up">
-          <h2 className="text-xl font-semibold mb-2">🤖 Commands</h2>
-          <p className="text-sm leading-7 mb-2">Prefix: <code className="bg-gray-100 px-2 py-1 rounded">/</code></p>
-          <ul className="list-disc pl-5 text-sm leading-7">
-            <li><code>/help</code> – Show all commands</li>
-            <li><code>/chat</code> – Talk to Yuki with her character personality</li>
-            <li><code>/faceswapper</code> – Swap faces on photos</li>
-            <li><code>/tempmail</code> – Generate temporary email</li>
-            <li><code>/inrole</code> – See members by role</li>
-          </ul>
-        </section>
-
-        <section data-aos="fade-up">
-          <h2 className="text-xl font-semibold mb-2">⚙️ How to Add Yuki</h2>
-          <p className="text-sm leading-7">
-            You can add Yuki Suou to your server by clicking the invite link below.
-          </p>
-          <div className="mt-4">
-            <a
-              href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="bg-[#E93306] hover:bg-[#F86401] transition text-white px-6 py-2 rounded-lg font-medium text-sm">
-                Invite Yuki Suou
-              </button>
-            </a>
-          </div>
-        </section>
-
-        <section data-aos="fade-up">
-          <h2 className="text-xl font-semibold mb-2">📞 Support</h2>
-          <p className="text-sm leading-7">
-            Join our Discord community to ask questions, report bugs, or just hang out!
-          </p>
-          <div className="mt-4">
-            <a
-              href="https://discord.gg/MwNE7Vfb6t"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="bg-[#5865F2] hover:bg-[#4752c4] transition text-white px-6 py-2 rounded-lg font-medium text-sm">
-                Join Discord
-              </button>
-            </a>
-          </div>
-        </section>
+      {/* Bouncing Dot Animation */}
+      <div
+        className="flex gap-2 mt-8"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <span className="w-3 h-3 bg-indigo-400 rounded-full animate-bounce [animation-delay:0.1s]"></span>
+        <span className="w-3 h-3 bg-purple-400 rounded-full animate-bounce [animation-delay:0.2s]"></span>
+        <span className="w-3 h-3 bg-pink-400 rounded-full animate-bounce [animation-delay:0.3s]"></span>
       </div>
     </div>
   );
 };
 
-export default DocumentationPage;
+export default ComingSoonPage;
