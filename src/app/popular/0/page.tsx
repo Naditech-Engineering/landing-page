@@ -25,8 +25,8 @@ const PopularDetailPage = () => {
             hingga event dan dukungan komunitas. Bergabunglah bersama ribuan pengguna lain yang aktif dan membangun komunitas yang solid!
           </p>
 
-          {/* Join Discord Button */}
-          <div className="flex justify-center mt-6">
+          {/* Join Discord Button aligned to the left */}
+          <div className="mt-6">
             <a href="https://discord.gg/MwNE7Vfb6t" target="_blank" rel="noopener noreferrer">
               <button className="px-8 py-3 text-white bg-[#E93306] hover:bg-[#F86401] rounded-lg text-lg font-semibold transition duration-300">
                 Join Discord
