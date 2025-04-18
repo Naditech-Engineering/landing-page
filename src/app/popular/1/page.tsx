@@ -9,16 +9,16 @@ const ComingSoonPage = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center bg-[#f7f3ef] text-center px-4 pt-32 pb-16 overflow-hidden">
-      {/* Glowing Background Circle */}
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#f7f3ef] text-center px-4 pt-32 pb-16">
+      {/* Glowing Circle Animation */}
       <div
-        className="absolute w-80 h-80 rounded-full bg-gradient-to-r from-indigo-400 via-[#b3917b] to-[#dbcbbf] opacity-20 blur-3xl animate-pulse"
-        style={{ top: '10%', left: '50%', transform: 'translateX(-50%)' }}
+        className="w-48 h-48 rounded-full bg-gradient-to-r from-indigo-500 via-[#b3917b] to-[#dbcbbf] animate-pulse shadow-2xl blur-sm"
+        data-aos="zoom-in"
       ></div>
 
       {/* Coming Soon Text */}
       <h1
-        className="text-4xl md:text-5xl font-extrabold mt-4 bg-gradient-to-r from-indigo-700 via-[#9e7357] to-[#dbcbbf] text-transparent bg-clip-text z-10"
+        className="text-4xl md:text-5xl font-extrabold mt-10 bg-gradient-to-r from-indigo-600 via-[#b3917b] to-[#dbcbbf] text-transparent bg-clip-text"
         data-aos="fade-up"
       >
         Coming Soon
@@ -26,7 +26,7 @@ const ComingSoonPage = () => {
 
       {/* Description */}
       <p
-        className="mt-6 text-[#5e5247] max-w-md text-sm md:text-base z-10"
+        className="mt-10 text-[#5e5247] max-w-md text-sm md:text-base"
         data-aos="fade-up"
         data-aos-delay="100"
       >
@@ -35,7 +35,7 @@ const ComingSoonPage = () => {
 
       {/* Bouncing Dots */}
       <div
-        className="flex gap-2 mt-10 z-10"
+        className="flex gap-2 mt-10"
         data-aos="fade-up"
         data-aos-delay="200"
       >
