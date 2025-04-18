@@ -1,3 +1,4 @@
+'use client' // Add this directive at the top to specify client-side rendering
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { FaDiscord } from "react-icons/fa"; // Importing Discord logo icon
