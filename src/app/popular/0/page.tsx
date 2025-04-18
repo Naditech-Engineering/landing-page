@@ -24,16 +24,16 @@ const PopularDetailPage = () => {
             Di sini, kamu bisa menikmati berbagai fasilitas seperti chatbot AI, fitur keamanan server, sistem leveling, 
             hingga event dan dukungan komunitas. Bergabunglah bersama ribuan pengguna lain yang aktif dan membangun komunitas yang solid!
           </p>
+
+          {/* Join Discord Button */}
+          <div className="flex justify-center mt-6">
+            <a href="https://discord.gg/MwNE7Vfb6t" target="_blank" rel="noopener noreferrer">
+              <button className="px-8 py-3 text-white bg-[#E93306] hover:bg-[#F86401] rounded-lg text-lg font-semibold transition duration-300">
+                Join Discord
+              </button>
+            </a>
+          </div>
         </div>
-      </div>
-      
-      {/* Join Discord Button */}
-      <div className="flex justify-center mt-6">
-        <a href="https://discord.gg/MwNE7Vfb6t" target="_blank" rel="noopener noreferrer">
-          <button className="px-8 py-3 mt-4 text-white bg-[#E93306] hover:bg-[#F86401] rounded-lg text-lg font-semibold transition duration-300">
-            Join Discord
-          </button>
-        </a>
       </div>
     </div>
   );
