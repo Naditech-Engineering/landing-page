@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { FaDiscord } from "react-icons/fa"; // Importing Discord logo icon
 
 const PopularDetailPage = () => {
   return (
@@ -25,10 +26,11 @@ const PopularDetailPage = () => {
             hingga event dan dukungan komunitas. Bergabunglah bersama ribuan pengguna lain yang aktif dan membangun komunitas yang solid!
           </p>
 
-          {/* Join Discord Button aligned to the left */}
+          {/* Join Discord Button with Discord Logo */}
           <div className="mt-6">
             <a href="https://discord.gg/MwNE7Vfb6t" target="_blank" rel="noopener noreferrer">
-              <button className="px-8 py-3 text-white bg-[#E93306] hover:bg-[#F86401] rounded-lg text-lg font-semibold transition duration-300">
+              <button className="px-8 py-3 text-white bg-[#E93306] hover:bg-[#F86401] rounded-lg text-lg font-semibold transition duration-300 flex items-center gap-2">
+                <FaDiscord className="text-white text-xl" /> {/* Discord logo */}
                 Join Discord
               </button>
             </a>
