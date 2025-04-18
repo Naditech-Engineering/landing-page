@@ -19,7 +19,7 @@ const PopularDetailPage = () => {
           />
         </div>
         <div className="w-full lg:w-1/2 text-gray-800">
-          <h2 className="text-xl font-bold mb-4">Official Discord Server</h2>
+          <h2 className="text-xl font-bold mb-4">OFFICIAL DISCORD SERVER</h2>
           <p className="text-sm leading-7">
             Kh1ev Community adalah rumah dari Yuki Suou — sebuah server Discord yang ramah dan penuh fitur. 
             Di sini, kamu bisa menikmati berbagai fasilitas seperti chatbot AI, fitur keamanan server, sistem leveling, 
