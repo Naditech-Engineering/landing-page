@@ -31,7 +31,7 @@ const PopularDetailPage = () => {
             <a href="https://discord.gg/MwNE7Vfb6t" target="_blank" rel="noopener noreferrer">
               <button className="px-8 py-3 text-white bg-[#E93306] hover:bg-[#F86401] rounded-lg text-lg font-semibold transition duration-300 flex items-center gap-2">
                 <FaDiscord className="text-white text-xl" /> {/* Discord logo */}
-                Join Discord
+                Join
               </button>
             </a>
           </div>
