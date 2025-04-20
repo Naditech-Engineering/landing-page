@@ -23,9 +23,9 @@ const MostPopular = () => {
     },
     {
       image: "/images/img5.png",
-      title: "Documentation",
+      title: "Privacy Policy",
       description:
-        "Documentation about Yuki Suou.",
+        "Policy about Yuki Suou.",
     },
   ];
   return (
