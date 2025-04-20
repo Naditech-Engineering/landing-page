@@ -5,9 +5,6 @@ const PrivacyPolicy: React.FC = () => {
   return (
     <div className="bg-white text-black container mx-auto pt-24 p-8">
       <h1 className="text-3xl font-bold mb-6">Privacy Policy of Yuki Suou</h1>
-      <p className="text-lg mb-4">This Application collects some Personal Data from its Users.</p>
-      <p className="text-lg mb-4">&nbsp;</p>
-      <p className="text-lg mb-8 italic">This document can be printed for reference by using the print command in the settings of any browser.</p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-2">Owner and Data Controller</h2>
       <p className="mb-1">Yuki Suou Bot Team</p>
