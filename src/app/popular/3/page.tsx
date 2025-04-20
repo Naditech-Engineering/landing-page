@@ -8,7 +8,7 @@ const PrivacyPolicy: React.FC = () => {
 
       <h2 className="text-2xl font-semibold mt-8 mb-2">Owner and Data Controller</h2>
       <p className="mb-1">Yuki Suou Bot Team</p>
-      <p>Contact email: contact@yukisuou-bot.xyz</p>
+      <p>Contact email: contact@yukisuou.xyz</p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-2">Types of Data collected</h2>
       <p className="mb-4">
@@ -99,7 +99,7 @@ const PrivacyPolicy: React.FC = () => {
 
       <h2 className="text-2xl font-semibold mt-8 mb-2">How to exercise these rights</h2>
       <p className="mb-8">
-        Any requests to exercise User rights can be directed to the Owner at contact@yukisuou-bot.xyz. Requests are free of charge and answered within one month.
+        Any requests to exercise User rights can be directed to the Owner at contact@yukisuou.xyz. Requests are free of charge and answered within one month.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-2">Additional information</h2>
