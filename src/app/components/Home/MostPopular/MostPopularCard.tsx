@@ -19,14 +19,14 @@ const MostPopularCard = ({ id, title, image, description }: ImgProps) => {
             <Image
               src={image}
               alt={title}
-              layout="fill"
-              objectFit="cover"
+              layout="intrinsic"  // Keep original image size with aspect ratio
+              objectFit="cover"   // Make sure image covers the container
               className="rounded-t-2xl"
             />
           </div>
           {/* Overlay for title and description */}
           <div
-            className="p-6 bg-white bg-opacity-90 rounded-b-2xl absolute bottom-0 left-0 w-full"
+            className="p-6 bg-white bg-opacity-90 rounded-b-2xl"
             style={{
               background: "linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0))",
             }}
