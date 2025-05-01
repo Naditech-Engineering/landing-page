@@ -13,7 +13,7 @@ const MostPopularCard = ({ id, title, image, description }: ImgProps) => {
   return (
     <Link href={`/popular/${id}`}>
       <div className="flex justify-center items-center">
-        <div className="bg-gradient-to-r from-[#FD8E3F] [background-size:200%_100%] via-[#F8D3A9] to-[#F8D3A9] relative w-80 h-96 rounded-xl shadow-xl overflow-hidden bg-white">
+        <div className="relative w-80 h-96 rounded-xl shadow-xl overflow-hidden bg-white">
           {/* Full-size image */}
           <Image src={image} alt={title} layout="fill" objectFit="contain" />
           {/* Overlay for title and description */}
