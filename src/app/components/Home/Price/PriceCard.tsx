@@ -20,8 +20,7 @@ function PriceCard({ price, plan }: priceProps) {
     { feature: "Priority Support" },
     { feature: "Exclusive Partnership" },
     { feature: "Anime Roleplay" },
-    { feature: "Custom VIP Role" },
-    { feature: "Multi-Language AI" },
+    { feature: "Gaming" },
     { feature: "Ultra-Fast AI Interface" },
     { feature: "Early Access to New Features" },
   ];
