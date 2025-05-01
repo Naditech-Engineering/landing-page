@@ -13,22 +13,22 @@ const MostPopularCard = ({ id, title, image, description }: ImgProps) => {
   return (
     <Link href={`/popular/${id}`}>
       <div className="flex justify-center items-center">
-        <div className="bg-white bg-opacity-90 rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-          {/* Image container with relative position */}
+        <div className="bg-[#F5F5DC] rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+          {/* Full-size image */}
           <div className="relative w-80 h-80">
             <Image
               src={image}
               alt={title}
               layout="fill"
               objectFit="cover"
-              className="rounded-t-2xl"
+              className="rounded-t-xl"
             />
           </div>
           {/* Overlay for title and description */}
           <div
-            className="p-6 bg-white bg-opacity-90 rounded-b-2xl"
+            className="p-6 bg-[#F5F5DC] bg-opacity-90 rounded-b-xl"
             style={{
-              background: "linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0))",
+              background: "linear-gradient(to top, rgba(245, 245, 220, 0.9), rgba(245, 245, 220, 0))",
             }}
           >
             <h1 className="text-gray-800 text-2xl font-semibold">{title}</h1>
