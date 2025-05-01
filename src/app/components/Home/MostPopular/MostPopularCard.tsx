@@ -13,26 +13,18 @@ const MostPopularCard = ({ id, title, image, description }: ImgProps) => {
   return (
     <Link href={`/popular/${id}`}>
       <div className="flex justify-center items-center">
-        <div className="bg-[#F5F5DC] rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div className="bg-gradient-to-r from-[#E8D3C7] [background-size:200%_100%] via-[#D3B49B] to-[#E8D3C7] relative w-80 h-96 rounded-xl shadow-xl overflow-hidden">
           {/* Full-size image */}
-          <div className="relative w-80 h-80">
-            <Image
-              src={image}
-              alt={title}
-              layout="fill"
-              objectFit="cover"
-              className="rounded-t-xl"
-            />
-          </div>
+          <Image src={image} alt={title} layout="fill" objectFit="contain" />
           {/* Overlay for title and description */}
           <div
-            className="p-6 bg-[#F5F5DC] bg-opacity-90 rounded-b-xl"
+            className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-[#4A3B2A] via-transparent to-transparent p-5"
             style={{
-              background: "linear-gradient(to top, rgba(245, 245, 220, 0.9), rgba(245, 245, 220, 0))",
+              background: "linear-gradient(to top, #4A3B2A 50%, transparent 100%)",
             }}
           >
-            <h1 className="text-gray-800 text-2xl font-semibold">{title}</h1>
-            <p className="text-gray-600 text-sm mt-2">{description}</p>
+            <h1 className="text-white text-xl font-semibold">{title}</h1>
+            <p className="text-white text-sm mt-2">{description}</p>
           </div>
         </div>
       </div>
