@@ -7,7 +7,7 @@ type priceProps = {
 };
 
 function PriceCard({ price, plan }: priceProps) {
-  const priceFeatures = [
+  const goldFeatures = [
     { feature: "Partnership" },
     { feature: "Management Improvement" },
     { feature: "Anime Roleplay" },
@@ -15,6 +15,18 @@ function PriceCard({ price, plan }: priceProps) {
     { feature: "Multi-Language AI" },
     { feature: "Fast AI Interface" },
   ];
+
+  const diamondFeatures = [
+    { feature: "Priority Support" },
+    { feature: "Exclusive Partnership" },
+    { feature: "Anime Roleplay" },
+    { feature: "Custom VIP Role" },
+    { feature: "Multi-Language AI" },
+    { feature: "Ultra-Fast AI Interface" },
+    { feature: "Early Access to New Features" },
+  ];
+
+  const priceFeatures = plan === "Gold" ? goldFeatures : diamondFeatures;
 
   return (
     <div className="bg-white p-10 rounded-lg shadow-lg">
