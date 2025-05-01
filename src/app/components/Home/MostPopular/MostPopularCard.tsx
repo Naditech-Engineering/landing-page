@@ -19,8 +19,9 @@ const MostPopularCard = ({ id, title, image, description }: ImgProps) => {
             <Image
               src={image}
               alt={title}
-              layout="intrinsic"  // Keep original image size with aspect ratio
-              objectFit="cover"   // Make sure image covers the container
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"  // Ensure the image is always centered
               className="rounded-t-2xl"
             />
           </div>
