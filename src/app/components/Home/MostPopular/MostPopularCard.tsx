@@ -14,7 +14,7 @@ const MostPopularCard = ({ id, title, image, description }: ImgProps) => {
     <Link href={`/popular/${id}`}>
       <div className="flex justify-center items-center">
         <div className="bg-white bg-opacity-90 rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-          {/* Full-size image */}
+          {/* Image container with relative position */}
           <div className="relative w-80 h-80">
             <Image
               src={image}
