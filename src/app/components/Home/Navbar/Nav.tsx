@@ -27,7 +27,7 @@ const Nav = ({ openNav }: Props) => {
   };
 
   const handleLoginClick = () => {
-    window.location.href = "https://dash.yukisuou.xyz/dashboard";
+    window.location.href = "https://discord.com/oauth2/authorize?client_id=1294484671643779073";
   };
 
   return (
@@ -54,7 +54,7 @@ const Nav = ({ openNav }: Props) => {
             onClick={handleLoginClick} 
             className="md:px-8 md:py-2.5 px-6 py-2 text-white font-semibold text-base bg-gradient-to-r from-[#F86401] via-[#E93306] to-[#FFA500] hover:from-[#FF5733] hover:to-[#FFD700] transition-all duration-200 rounded-full"
           >
-            Login
+            Invite
           </button>
           <HiBars3BottomRight onClick={openNav} className="w-8 h-8 cursor-pointer text-black lg:hidden" />
         </div>
