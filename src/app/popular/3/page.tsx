@@ -67,7 +67,7 @@ const PrivacyPolicy: React.FC = () => {
         If you have any questions about this Privacy Policy, you can contact us at <a href="mailto:contact@yukisuou.xyz" className="text-blue-600 underline">contact@yukisuou.xyz</a>.
       </p>
 
-      <p className="text-sm text-gray-500">Last updated: April 20, 2025</p>
+      <p className="text-sm text-gray-500">Last updated: May 6, 2025</p>
     </div>
   );
 };
