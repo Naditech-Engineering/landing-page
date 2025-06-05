@@ -38,7 +38,7 @@ const TermsOfService: React.FC = () => {
 
       <h2 className="text-2xl font-semibold mt-8 mb-2">5. Privacy</h2>
       <p className="mb-4">
-        Your use of the Service is also governed by our <a href="/privacy" className="text-blue-600 underline">Privacy Policy</a>.
+        Your use of the Service is also governed by our <a href="/popular/2" className="text-blue-600 underline">Privacy Policy</a>.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-2">6. Intellectual Property</h2>
