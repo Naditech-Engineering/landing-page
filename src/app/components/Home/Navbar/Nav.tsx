@@ -35,9 +35,9 @@ const Nav = ({ openNav }: Props) => {
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* logo */}
         <h1 className="text-xl md:text-2xl font-extrabold">
-          NADITECH
+          NADI
           <span className="text-xl md:text-2xl text-[#F86401] font-extrabold">
-            ENGINEERING
+            TECH
           </span>
         </h1>
         {/* nav links */}
